@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+
+        /** Funciones 
+         * conjunto de instrucciones que realiza una tarea
+        */
+
+        var a = 3;
+        var b = 4;
+        function restar() {
+            console.log(a-b);
+        }
+        restar();
+
+        // a y b son los parámetros de la función
+        function sumar(a, b) {
+            console.log(a + b);
+            return a + b; //devuelve un valor
+        }
+        let result = sumar(2, 4); //suma a + b y asigna el resultado en la variable result
+        console.log(`El resultado de sumar es : ${sumar(4, 5)}`);
+        sumar(4.3, 2.1);
+
+
+        function hacerEjercicio(a, mensaje) {
+            console.log(`Hacer ${a} veces ${mensaje}`);
+        }
+
+        hacerEjercicio(3, "flexiones de brazo");
+
+        // ejemplo de funcion con parámetros y devolución de valor
+        function raizCuadrada(x) {
+            Math.sqrt(x); //no devuelve ningún valor
+            return Math.sqrt(x); //Si devuelve  valor para ser usado fuera de la función
+        }
+        var raiz = raizCuadrada(16);
+        console.log(`La raíz cuadrada de 16 es: ${raiz}`);
+        var calculo = 3 * raiz;
+
+
+        function calcularSueldo(categoriaEmpleado) {
+            let sueldoBasico = 40000;
+            return sueldoBasico * categoriaEmpleado;
+        }
+
+        function generarRecibo(sueldo) {
+            console.log(`El empleado cobra ${sueldo}`);
+        }
+
+        var sueldo1 = calcularSueldo(1);
+        var sueldo2 = calcularSueldo(2);
+        generarRecibo(sueldo1);
+        generarRecibo(sueldo2);
+
+
+        // Función flecha
+
+
+        /** CallBack o retrollamada 
+         * se envía una función como parámetro
+        */
+
+        //callback
+        function mostrarLog(mensaje) {
+            console.log(mensaje);
+        }
+        //mostrarLog("Mi primer Callback");
+
+        //callback
+        function mostrarAlert(mensaje) {
+            alert(mensaje);
+        }
+
+        function mensajeBienvenida(nombre, callback) {
+            let mensaje = `Bienvenido ${nombre}`; // Bienvenido Juan Pérez
+            callback(mensaje);
+        }
+
+        let consola = confirm("Consola o alert?")
+        if (consola) {
+            mensajeBienvenida("Juan Pérez", mostrarLog);
+        } else {
+            mensajeBienvenida("Juan Pérez", mostrarAlert);
+        }
+
+
+        /** Closures o clausulas 
+         * clausulas que asocian datos con funciones
+         * alamacena datos a los cuales se la aplica la misma función
+        */
+        function creaSumador(x) { // x es su estado, su variable
+            // x= 5 o x = 10
+            return function (y) {
+                return x + y;
+            };
+        }
+        var suma5 = creaSumador(5); // suma5 tiene x = 5 y la funcion (y)
+        var suma10 = creaSumador(10); // suma10 tiene x = 10 y la funcion (y)
+        console.log(suma5(2)); // resultado 7
+        console.log(suma10(2)); // resultado 12
+
+        // sería lo mismo que un closure
+        var suma6 = function (y) {
+            return 6 + y;
+        }
+        console.log(suma6(2));
+
+        // marcar azul y rojo
+        function crearMarcador(color) {
+            return function() {
+                return `Escribir en la pizarra con color ${color}`;
+            }
+        }
+
+        var marcadorAzul = crearMarcador("azul");
+        var marcadorRojo = crearMarcador("rojo");
+        console.log(marcadorAzul());
+        console.log(marcadorRojo());
+
+        
+        
+        /**
+        function crearMarcador(color) {
+            return function () {
+                console.log("pintar color: " + color);
+            }
+        }
+        var marcadorAzul = crearMarcador("azul");
+        var marcadorRojo = crearMarcador("rojo");*/
+
+
+        /** Scope 
+         * contexto en que las variables son visibles
+        */
+        function exampleFunction() {
+            var x = "declarada dentro de la función"; // x solo se puede utilizar en exampleFunction
+            console.log("funcion interna");
+            console.log(x);
+        }
+        // console.log(x); // error fuera de alcance
+
+        if (true) {
+            var z = 3;
+            let w = 4;
+        }
+        console.log(`Variable z=${z}`);
+        // console.log(`Variable w=${w}`); fuera de alcance
+
+        var y = "función externa declarada";
+        exampleFunction();
+
+        function exampleFunction() {
+            console.log("funcion interna");
+            console.log(y);
+        }
+
+        console.log("funcion externa");
+        console.log(y); // no está fuera de alcance           
+
+
+
+        /** Función flecha 
+         * función con menos código, más limitada
+         * 
+        */
+
+        /**
+        function suma( a, b ) {
+            return a + b;
+        }*/
+
+        var suma = (a, b) => a + b;
+        /**
+        var suma = (a, b) => {
+            a = a + 2;
+            b = b * 3;
+            return a + b;
+        };*/
+        /**
+        let x = 3;
+        let y = 5;
+        var suma = () => x + y;*/
+
+        console.log(`La suma de a + b es: ${suma(4, 3)}`);
+
+        //Función anónima
+        let f = function (a) {
+            return a + 2;
+        };
+        console.log(f(1)); // 3
+
+        //Función flecha
+        let g = (a) => a + 2;
+        console.log(g(1)); // 3
+
+
+
+        /** Array
+         * variable especial puede contener más de un valor a la vez
+        */
+        var car1 = "Saab";
+        var car2 = "Volvo";
+        var car3 = "BMW";
+
+        var cars = ["Saab", "Volvo", "BMW"];
+        console.log(`cars[0]: ${cars[0]}`); //saab
+        cars[0] = "Reanult"; // asignar un valor
+        console.log(cars);
+
+        // propiedades y métodos (es como una función)
+        console.log(cars.length);
+        cars.sort();
+        console.log(cars);
+        cars.pop();
+        console.log(cars);
+        cars.push("Fiat");
+        console.log(cars);
+        console.log(cars.indexOf("Fiat", 0));
+
+        cars.forEach(element => console.log(element));
+        cars.forEach(function (elemento, indice, cars) {
+            console.log(elemento, indice);
+        })
+
+        // matriz de 2 dimensiones 
+        let butacas = [
+            ['A1', 'A2', 'A3', 'A5'],
+            ['B1', 'B2', 'B3', 'B5'],
+            ['C1', 'C2', 'C3', 'C5']
+        ]
+
+        console.log(butacas);
+        console.log(butacas[0][0]);
+        console.log(butacas[1][2]);
+        butacas[1][2] = "B33";
+        console.log(butacas);
+
+        butacas.forEach(function (elemento, indice, butacas) {
+            console.log(elemento, indice);
+        });
+
+
+        /** For Each 
+         * llama a una función por cada elemento de un array
+        */
+        var sum = 0;
+        var numbers = [65, 44, 12, 4];
+        numbers.forEach(sumatoria);
+
+        function sumatoria(elemento) {
+            sum += elemento;
+            console.log(sum);
+        }
+
+
+        /** Every 
+         * determina si todos los elementos satisfacen una condición
+        */
+        var listadoEdades = [32, 33, 16, 40];
+
+        function esMayorEdad(edad) {
+            return edad >= 18;
+        }
+        // var esMayorEdad = (edad) => edad >= 18;
+        console.log(listadoEdades.every(esMayorEdad)); //determina si todos los elementos satisfacen una condición
+        console.log(listadoEdades.filter(esMayorEdad)); // filtra los elementos que cumplen con una condición
+        console.log(listadoEdades.some(esMayorEdad)); //si alguno cumple con la condición
+        console.log(listadoEdades.map(Math.sqrt)); // devuelve un array al cual se le aplico una función
+
+        function sumatoria(total, num) {
+            return total + num;
+        }
+        console.log(listadoEdades.reduce(sumatoria)); //reduce el array a un valor, aplica la función enviada
+
+
+        /** Objeto String 
+         * manipular cadena caracteres
+        */
+        const nombre = "Pedro";
+        const apellido = new String("Suarez");
+        console.log(nombre[2]);
+        console.log(apellido.length);
+        console.log(apellido.indexOf("a", 0));
+
+        /** Objeto Math 
+         * funciones matemáticas
+        */
+        console.log(Math.min(2, 4, 1));
+        console.log(Math.round(4.6));
+
+
+
+
+
+
+    </script>
+</head>
+
+<body>
+
+    <!-- Función flecha -->
+    <input type="button" value="Func Flecha 1" onclick="sumar(4,3);">
+
+
+
+</body>
+
+</html>

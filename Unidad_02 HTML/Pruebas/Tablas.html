@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tablas</title>
+    <!-- estilos -->
+    <style>
+        table,
+        th,
+        td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+        
+        table.center {
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        thead {
+            color: green;
+        }
+        
+        tbody {
+            color: blue;
+        }
+        
+        tfoot {
+            color: red;
+        }
+        
+        table,
+        th,
+        td {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>8. Tablas</h1>
+    <p>Tabla con Filas (<b>R</b>ow) y Columnas simples</p>
+    <table>
+        <tr>
+            <td>Celda 1, linea 1</td>
+            <td> Celda 2, linea 1</td>
+        </tr>
+        <tr>
+            <td> Celda 1, linea 2</td>
+            <td> Celda 2, linea 2</td>
+        </tr>
+    </table>
+    <br>
+    <table class="center">
+        <tr>
+            <th>Celda 1, linea 1</th>
+            <th> Celda 2, linea 1</th>
+        </tr>
+        <tr>
+            <td> Celda 1, linea 2</td>
+            <td> Celda 2, linea 2</td>
+        </tr>
+    </table>
+    <br>
+    <table>
+        <tr>
+            <th>Month</th>
+            <th>Savings</th>
+        </tr>
+        <tr>
+            <td>January</td>
+            <td>$100</td>
+        </tr>
+        <tr>
+            <td>February</td>
+            <td>$80</td>
+        </tr>
+    </table>
+    <br>
+    <table style="background-color:#00FF00">
+        <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Phone</th>
+        </tr>
+        <tr>
+            <td>John Doe</td>
+            <td>john.doe@example.com</td>
+            <td>123-45-678</td>
+        </tr>
+    </table>
+
+    <br>
+    <table>
+        <tr>
+            <th>Month</th>
+            <th>Savings</th>
+        </tr>
+        <tr>
+            <td>January</td>
+            <td>$100</td>
+        </tr>
+        <tr>
+            <td>February</td>
+            <td>$80</td>
+        </tr>
+    </table>
+    <br>
+    <p>Ojo con la linea</p>
+    <table style="float:right">
+        <tr>
+            <th>Month</th>
+            <th>Savings</th>
+        </tr>
+        <tr>
+            <td>January</td>
+            <td>$100</td>
+        </tr>
+        <tr>
+            <td>February</td>
+            <td>$80</td>
+        </tr>
+    </table>
+    <br>
+    <table>
+        <thead>
+            <tr>
+                <th>Month</th>
+                <th>Savings</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>January</td>
+                <td>$100</td>
+            </tr>
+            <tr>
+                <td>February</td>
+                <td>$80</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>Sum</td>
+                <td>$180</td>
+            </tr>
+        </tfoot>
+    </table>
+    <br>
+    <table>
+        <tr>
+            <th id="name" colspan="2">Name</th>
+        </tr>
+        <tr>
+            <th headers="name">Firsname</th>
+            <th headers="name">Lastname</th>
+        </tr>
+    </table> <br>
+    <table>
+        <tr>
+            <th id="name" abbr="Nombre">Nombre completo</th>
+            <th id="email" abbr="email">Correo electrónico</th>
+            <th id="phone" abbr="what">Numero del WhatsApp</th>
+            <th id="addr" abbr="Direccion ">Dirección completa</th>
+        </tr>
+        <tr>
+            <td headers="name">John Doe</td>
+            <td headers="email">someone@example.com</td>
+            <td headers="phone">+45342323</td>
+            <td headers="addr">Rosevn 56,4300 Sandnes,Norway</td>
+        </tr>
+    </table>
+    <br>
+    <table>
+        <tr>
+            <th></th>
+            <th scope="col">Month</th>
+            <th scope="col">Savings</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>January</td>
+            <td>$100</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>February</td>
+            <td>$80</td>
+        </tr>
+    </table>
+</body>
+
+</html>

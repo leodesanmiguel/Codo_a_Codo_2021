@@ -1,0 +1,135 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.encabezado {
+    background-color: #AAAAAA88;
+    text-align: center;
+    color: blue;
+    margin: 2px 20px;
+}
+
+.imagen1 {
+    border: 1px solid red;
+    width: 90% 2% auto;
+    text-align: center;
+    margin: 2px 20px;
+}
+
+.imagen {
+    border: 1px blue solid;
+}
+
+h1,
+.encabezado {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+
+.referencia {
+    background-color: rgb(33, 33, 33, 0.1);
+    padding: 15px;
+    margin: 10px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    border: 1px solid gray;
+}
+
+.referencia img {
+    width: calc(100% - 10vw);
+}
+
+.envoltorio {
+    background-color: #33333333;
+    list-style-type: none;
+    border-radius: 5px;
+    margin: 10px;
+}
+
+.frm_row {
+    display: flex;
+    justify-content: flex-end;
+    padding: .5em;
+}
+
+.frm_row label {
+    padding: .5em 1em .5em 0;
+}
+
+.frm_row input {
+    flex: 1;
+    padding: .5em;
+}
+
+.frm_row input:hover {
+    background-color: beige;
+}
+
+.frm_row button {
+    background: gray;
+    color: white;
+    border: 0;
+    border-radius: 2px;
+    padding: 10px;
+    width: 100px;
+}
+
+.frm_row button:hover {
+    background-color: aqua;
+    color: blue;
+}
+
+#resulta {
+    background-color: rgb(33, 33, 33, 0.1);
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    margin: 10px;
+    border: 1px solid gray;
+}
+
+#resulta1 {
+    background-color: rgb(33, 33, 33, 0.1);
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    margin: 10px;
+    border: 1px solid gray;
+}
+
+table {
+    width: 100%;
+    background-color: #eee;
+}
+
+table,
+th,
+td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    padding: 15px;
+    text-align: left;
+}
+
+#t01 tr:nth-child(even) {
+    background-color: #eee;
+}
+
+#t01 tr:nth-child(odd) {
+    background-color: #fff;
+}
+
+#t01 th {
+    background-color: rgba(7, 23, 66, 0.836);
+    color: rgba(214, 228, 15, 0.986);
+}

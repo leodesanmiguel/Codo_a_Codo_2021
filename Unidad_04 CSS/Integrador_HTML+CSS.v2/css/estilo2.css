@@ -1,0 +1,150 @@
+    /*****************************************************
+     *  Fuentes de Google Fonts 
+     ******************************************************/
+    
+    @import url ('https://fonts.googleapis.com/css2? family = Lato: wght @ 100; 300; 400; 700; 900 & family = Playfair + Display: wght @ 400; 800 & display = intercambio');
+     :root {
+        /* colores*/
+        --color_header: #FFF3D2;
+        --color_header_t: #fdeefd;
+        --color_empresa: #333333;
+        --color_empresa_t: #33333300;
+        --color_btn_claro: #DF8817;
+        --color_btn_oscuro: #71B11F;
+        /* fuentes */
+        --fuente__Titulo: 'Playfair Display', serif;
+        --fuente__Contenido: 'Lato', sans-serif;
+    }
+    
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: var(--fuente__Contenido);
+    }
+    
+    body {
+        background-color: #29416715;
+        height: 100vh !important;
+    }
+    /* Clases de Botones */
+    
+    .btn_verPro {
+        text-decoration: none;
+        color: var(--color_header_t);
+        background-color: var(--color_btn_claro);
+        text-transform: uppercase;
+        font: 0.8rem;
+        font-weight: 700;
+        padding: 1rem 2rem;
+        border-radius: 6px;
+        display: inline-block;
+        /* para aplicar con flexbox */
+        align-self: center;
+    }
+    
+    .btn_contacto {
+        text-decoration: none;
+        color: var(--color_header_t);
+        background-color: var(--color_btn_claro);
+        text-transform: uppercase;
+        font: 0.8rem;
+        font-weight: 700;
+        padding: 1rem 2rem;
+        border-radius: 6px;
+        display: inline-block;
+        /* para aplicar con flexbox */
+        align-self: flex-start;
+    }
+    
+    .btn_verTodas {
+        text-decoration: none;
+        color: var(--color_header_t);
+        background-color: var(--color_btn_oscuro);
+        text-transform: uppercase;
+        font: 0.8rem;
+        font-weight: 700;
+        padding: 1rem 2rem;
+        border-radius: 6px;
+        display: inline-block;
+        /* para aplicar con flexbox */
+        align-self: flex-end;
+    }
+    /* TITULOS */
+    
+    nav>h1 {
+        font-family: var(--fuente__Titulo);
+        font-weight: 800;
+        font: 4rem;
+        color: var(--color_header);
+        padding: 1rem;
+    }
+    
+    #titulo {
+        font-family: var(--fuente__Titulo);
+        font-weight: 400;
+        font: 4rem;
+        color: var(--color_header_t);
+    }
+    
+    .nav {
+        text-decoration: none;
+        color: var(--color_header_t);
+        text-transform: capitalize;
+        font: 0.8rem;
+        font-weight: 300;
+        padding: 1rem;
+        display: inline-block;
+        /* para aplicar con flexbox */
+        align-self: flex-end;
+    }
+    
+    .conten {
+        text-decoration: none;
+        color: var(--color_header_t);
+        text-transform: capitalize;
+        font: 2rem;
+        font-weight: 700;
+        padding: 1rem;
+        display: inline-block;
+        /* para aplicar con flexbox */
+        align-self: flex-start;
+    }
+    /* HEADER */
+    
+    .header {
+        background: url(../img/header.jpg) no-repeat center/cover;
+        background-attachment: scroll;
+        height: 100vh;
+        color: var(--color_header);
+    }
+    
+    nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        border: red 1px solid;
+    }
+    
+    nav>h1 {
+        margin: 0;
+        text-transform: uppercase;
+        font-weight: 900;
+        font-stretch: wider;
+        font-size: 10vh;
+    }
+    
+    a.nav {
+        text-decoration: none;
+        color: var(--color_header_t);
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+        padding-top: 2rem;
+        font-weight: 100;
+    }
+    
+    a.nav:hover {
+        color: var(--color_btn_claro);
+    }

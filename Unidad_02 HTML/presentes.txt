@@ -1,0 +1,334 @@
+Victoria Rodriguez14:05
+bien
+Noelia Barrios14:05
+bien!
+Maria Lucia Futestti14:05
+bien, si
+Marcos Castelli14:05
+Todo bien
+Nadia Guereñú14:06
+Cuando esté el servidor podrían poner el libk en el grupo de Whatsapp.
+*link
+Luciano Nardelli14:07
+profe yo tenia una consulta respecto a formulario
+se podria poner un input que solo puede ser numero y oculto como contraseña?
+Camila14:07
+Me agrgan al grupo de wpp? no me agregaron tampoco a la comision esta 2108 de discord, mi numero es 1152624253 - evitar spam (?
+Santiago Gonzalez14:08
+https://chat.whatsapp.com/KZelm57YLjbH9iRVBlscfY
+Leandro Tancredi14:08
+<input type="password">
+?
+Camila14:09
+Claro tambien pense con el valor password en el atributo type
+Astrid Adriana14:09
+ya lo cambie, les sale Astrid Medina? me confirma alguno y disculpen :)
+Santiago Gonzalez14:09
+no
+Marisa Segura14:10
+si astrid
+Astrid Adriana14:10
+gracias Mari!
+Lucia Feretti14:10
+Sale Astrid Adriana
+Marisa Segura14:10
+dice astrid adriana era asi?
+Daniel Palma14:11
+si
+Matias Milenkoff14:11
+sisi
+Camila14:11
+nombre completo listo. 
+ah entonces no aparece todavia ajja
+Maria Lucia Futestti14:13
+si yo lo hice
+Sebastian Rodriguez14:13
+Sisi
+Raffi Kocak14:13
+Si
+Victoria Rodriguez14:13
+si si
+Blanco Elba Soledad14:13
+yo tambien ya lo hice
+Raffi Kocak14:13
+Esperaba más preguntas 
+Carina Grosso14:14
+Martin Ichuribehere avisa que está sin internet
+avisamos
+Carina Grosso14:17
+si
+wanda scarpato14:17
+si
+Raffi Kocak14:17
+Desde el front end a una BBDD
+Leandro Tancredi14:18
+de cliente a servidor
+Raffi Kocak14:22
+Mail
+Maria Paz Sanchez14:22
+input
+Sebastian Rodriguez14:22
+Con la etiqueta placeholder
+Leandro Tancredi14:23
+<input type="password">
+Carina Grosso14:27
+y para colocar css
+Maria Paz Sanchez14:29
+Profe en la pag de Mozilla ponen la etiqueta input adentro de label, esta bien de cualquiera de las dos maneras? <label>DNI: <input type="text" name=""></label>
+Mauricio Barrera14:29
+Sería por el atributo FOR?
+Marta Angélica Yardin14:29
+Buenísimo aporte, Marcos
+Marcos Castelli14:31
+De nada
+Astrid Adriana14:32
+si quiero que el input quede debajo de label lo envuelvo en otro tag?
+Carina Grosso14:33
+<br>
+por ahora
+Astrid Adriana14:33
+pero que en lugar de que quede asi al lado como lo tiene el profe, que el recuadro quede debajo no como salto de linea. 
+Carina Grosso14:33
+se hace co css
+con
+Astrid Adriana14:34
+ok
+Marta Angélica Yardin14:37
+Del lado del servidor ya hay una tabla que dice que el 1 corresponde a Buenos Aires
+Ayelen Fabregat14:39
+Pero creo que de esa forma no seria util para hacer por ejemplo un corte de control 
+Fernando Gabriel Enrique14:41
+que ingrese manual
+Jesus Eduardo Tejerina14:41
+un input q busq automaticamente a la bd al momento de escribir?
+Marisa Segura14:49
+fieldset
+Camila14:50
+Si, son buenos aportes
+Marcos Castelli14:50
+Si dentro pones una etiqueta legend te permite ponerle titulo
+Martín Kovacic14:51
+ok perfecto
+Mathias Ledesma14:53
+creo que con el atributo width se establece el tamanno de las cosas en html
+Marcos Castelli14:57
+Lo probe en w3schools los checkbox al seleccionar varios van asi:
+vehicle1=Bike&vehicle2=Car&vehicle3=Boat 
+https://www.w3schools.com/tags/tryit.asp?filename=tryhtml5_input_type_checkbox
+Blanco Elba Soledad15:01
+gracias Marcos
+buen aporte
+Marcos Castelli15:01
+De nada, yo tambien tenia la duda...
+Maria Paz Sanchez15:03
+click boton derecho en el texto seleccionado
+Carina Grosso15:04
+no
+Mathias Ledesma15:06
+Cual es mas completo o cual es mas conveniente aprender a usar eclipse o netbeans?
+Raffi Kocak15:06
+Creo que es depende de tu gusto eso
+Yo arranqué con NetBeans pero me tiré a Eclipse
+Podés probar o ver tutos que usan uno u el otro y fijarte
+Mathias Ledesma15:07
+Raffi, por que el cambio?
+Blanco Elba Soledad15:07
+no profe
+Maria Paz Sanchez15:07
+si pero no me acuerdo
+Carina Grosso15:07
+si
+Astrid Adriana15:07
+get para obtener y post para enviar?
+Sebastián Schinner15:07
+Si
+Nadia Nichele15:07
+no
+Alejandro Nicolini15:07
+ffiguraba en la guia, pero no lo entendi
+Raffi Kocak15:08
+Mathias me pareció mucho más amigable el entorno de Eclipse que el de NB
+Camila15:12
+ahora veo que prefieren el Intellij IDEA tambien
+Maxi Roi15:13
+el intellij idea es muy bueno
+Daniel Palma15:19
+si se entendio
+Martinez Lorena15:19
+Todo claro profe
+Martin Gelman15:19
+Excelente, muy claro.
+Juan Jose Mata Reyes15:19
+no por ahora
+Noelia Barrios15:19
+se entendio todo profe
+Blanco Elba Soledad15:19
+por ahora no profe
+Victoria Rodriguez15:19
+Se entendio profe
+Julieta Baldivia15:19
+se entendió
+Lucia Feretti15:20
+Todo claro
+Nadia Nichele15:20
+se entendió
+Marcos Castelli15:20
+Todo claro
+Martin Gelman15:20
+el intellij idea es muy bueno: le he jugado!!!
+Mauricio Barrera15:20
+Se entendió
+Maria Paz Sanchez15:24
+ese lo hago cuuando me la olvido jaja
+Jorge Parra15:25
+jajaja
+Martin Gelman15:26
+Pillos... la informacion es poder.
+Nino Liporazzi15:27
+Todo claro! 
+Santos Sanchez15:27
+------------------------------------------------
+Carina Grosso15:27
+Si
+Raffi Kocak15:27
+Presente
+Pamela Balboa15:27
+presente
+Julieta Sánchez15:27
+Presente
+Lautaro Fabregat15:27
+presente
+Santiago Gonzalez15:27
+presente
+Lucia Feretti15:27
+ Presente
+Nadia Nichele15:27
+presente
+Julieta Baldivia15:27
+presente!!!
+Blanco Elba Soledad15:27
+presente
+Sebastián Schinner15:27
+Presente
+Leandro Tancredi15:27
+presente
+presente
+Camila15:27
+Siquila, Camila PRESENTE
+Mauricio Barrera15:27
+Presente
+Ayelen Fabregat15:27
+presente
+Matias Gomez15:27
+Presente 
+Carina Grosso15:27
+presente
+Juan Manuel Menés15:27
+presente
+Juan Jose Mata Reyes15:27
+presente 
+Naiara Rojas15:27
+Presente, gracias por la clase!! saludos
+Fernando Gabriel Enrique15:27
+presente
+Daniel Palma15:27
+Presente
+Nadia Guereñú15:27
+Presente
+Nancy Barea15:27
+Presente
+agustin palma15:27
+presente
+Matias Pacheco15:28
+Presente
+Martin Gelman15:28
+Presente
+Luna Hertzan15:28
+Presente!
+Victoria Rodriguez15:28
+Presente
+Noelia Barrios15:28
+presente!
+Marcos Castelli15:28
+Presente
+Mariano Gigena15:28
+presente
+wanda scarpato15:28
+Presente!
+Martinez Lorena15:28
+Presente
+Maria Paz Sanchez15:28
+Presente
+María Florencia Sánchez15:28
+Presente
+Mathias Ledesma15:28
+Presente
+Lucero Cochachez15:28
+Presente.
+Sebastian Rodriguez15:28
+Hola, presente!
+lucia Krasñansky15:28
+Presente
+Diego Ruiz15:28
+Presente
+Ybarra Valeria Elisabeth15:28
+presente
+Tú15:28
+Presente
+Macarena Raverta15:28
+PRESENTE
+Agostina15:28
+Agostina Ietri, presente
+Julio Duhalde15:28
+Presente
+Maria Lucia Futestti15:28
+Presente
+Tobias Sanchez15:28
+presente
+Jesus Parales15:28
+Presente !
+Alejandro Nicolini15:28
+Presente. Nicolini
+Erika Valdez15:28
+Presente
+Paula Gentile15:28
+presente
+Nicolas Avila15:28
+Presente
+Nino Liporazzi15:28
+Presente! Nino Liporazzi
+Jorge Silva15:28
+Presente
+Jorge Parra15:28
+Presente
+Malena Ain Sorolla15:28
+Presente
+Matias Cuaderno15:28
+Presente
+Luciano Nardelli15:28
+Presente, Hola 
+Matias Milenkoff15:28
+Presente 
+Maria Paula Baldivia15:28
+Hola! Presente!
+Maria Sol Ponce15:28
+Presente 
+Marta Angélica Yardin15:28
+Presente!
+Marilyn Romero15:28
+Presente!
+Jesus Eduardo Tejerina15:28
+muy buena la clase y mas con los compañeros aportando 
+Astrid Adriana15:28
+Hola!!! Presente! 
+Alejandra Quisbert15:28
+Presente
+Juan Cruz Sisa15:28
+Presente
+Marisa Segura15:28
+Hola   Presente
+Martín Kovacic15:29
+hola
+Santiago Mestralet15:29
+Hola, Presente
+

@@ -1,0 +1,13 @@
+- repaso: 
+  - script en cuerpo, 
+  - script en archivo externo
+
+- let vs var 
+    https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia/Sentencias/let
+  
+- operadores
+    https://developer.mozilla.org/es/docs/Web/JavaScript/Guide/Expressions_and_Operators
+
+-  operadores comparación, lógicos, bucles
+- Condicionales: if - else , operador ternario, switch
+- Bucles: While y For - For in - For of

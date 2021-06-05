@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+ /** Funciones 
+         * conjunto de instrucciones que realiza una tarea
+        */
+
+        var a = 3;
+        var b = 4;
+        function restar() {
+            console.log(a-b);
+        }
+        restar();
+
+        // a y b son los parámetros de la función
+        function sumar(a, b) {
+            console.log(a + b);
+            return a + b; //devuelve un valor
+        }
+        let result = sumar(2, 4); //suma a + b y asigna el resultado en la variable result
+        console.log(`El resultado de sumar es : ${sumar(4, 5)}`);
+        sumar(4.3, 2.1);
+
+
+        function hacerEjercicio(a, mensaje) {
+            console.log(`Hacer ${a} veces ${mensaje}`);
+        }
+
+        hacerEjercicio(3, "flexiones de brazo");
+
+        // ejemplo de funcion con parámetros y devolución de valor
+        function raizCuadrada(x) {
+            Math.sqrt(x); //no devuelve ningún valor
+            return Math.sqrt(x); //Si devuelve  valor para ser usado fuera de la función
+        }
+        var raiz = raizCuadrada(16);
+        console.log(`La raíz cuadrada de 16 es: ${raiz}`);
+        var calculo = 3 * raiz;
+
+        // función flecha, reduce los sintáxis de una función
+        result = multiplicar(3, 4);
+        function multiplicar(a,b) {
+            return a * b;
+        }
+        result = multiplicar(3, 4);
+        
+        let multiFlecha = (a, b) => {
+            return a * b;
+        }
+        result = multiFlecha(3,4);
+        console.log(`La multiplicación flecha dió: ${result}`);
+
+        let multiFlechaSinLlaves = (a, b) => a * b;
+        multiFlechaSinLlaves(3, 5);
+        
+        function calulcarSueldo(valorHora, catEmpleado) {
+            valorHora *= 150;
+            return catEmpleado * valorHora;
+        }
+
+        let calcSueldo = (valorHora, catEmpleado) => {
+            valorHora *= 150;
+            if(catEmpleado=1) {
+                return catEmpleado * valorHora;
+            } else {
+                return catEmpleado * valorHora;
+            }
+        }
+        calcSueldo(1000, 3);
+
+        let mayor = (a, b) => a > b ? true : false;
+        function esMayor(a, b) {
+            if(a>b) {
+                return true;
+            } else {
+                return false;
+            }
+        }
+
+        // array, una conjunto de elementos nombrados con una sola variable
+        // sistema para una consecionaria
+        car1 = "Renault";
+        car2 = "BMW";
+        car3 = "Volvo";
+
+        // 0 ,1 , 2
+        var cars = ["Renault", "BMW", "Volvo"];
+        console.log(`Primer elemento del array: ${cars[0]}`);
+        console.log(`Segundo elemento del array: ${cars[1]}`);
+
+        cars[2] = "Peugeot";
+        console.log(cars);
+
+        // propiedades y métodos de un array
+        console.log(cars.length); //propiedad me dice el tamaño
+        cars.sort();
+        console.log(cars);
+        cars.push("Fiat");
+        console.log(cars);
+        let car = cars.pop();
+        console.log(cars);
+        console.log(cars.indexOf("Renault"));
+        
+
+        // ejecuta una función para cáda elemento
+        cars.forEach(
+            function (elemento, indice, array) {
+                console.log(`Elemento: ${elemento}, indice: ${indice}`)
+            }
+        );
+        console.log(cars);
+
+        // sueldo mensual en dolares
+        var sueldos = [1000, 1500, 2000];
+        sueldos.forEach(
+            function (elemento, indice) {
+                console.log(`El empleado ${indice} cobra ${elemento += 50}`);
+            }
+        );    
+        console.log(sueldos);
+
+
+
+
+        // matrices
+        let butacas = [
+            ['A1', 'A2', 'A3', 'A5'],
+            ['B1', 'B2', 'B3', 'B5'],
+            ['C1', 'C2', 'C3', 'C5']
+        ]
+
+        console.log(butacas[0][0]);
+        console.log(butacas[1][3]);
+        butacas[2][0] = "CC1";    
+
+        butacas.forEach(function (elemento, indice, butacas) {
+            console.log(elemento, indice);
+        });
+
+        function aumentarSueldo(elemento,indice,array) {
+            // array[i] = elemento += 50;
+            console.log(`El empleado ${indice} cobra ${elemento += 50}`);
+        }
+
+        function reducirSueldo(elemento,indice) {
+            console.log(`El empleado ${indice} cobra ${elemento -= 50}`);
+        }
+        sueldos.forEach(aumentarSueldo); //esto es un callback
+        sueldos.forEach(reducirSueldo); //esto es un callback
+
+        // every, verifica si todos los elemenos de un array cumplen con una condición
+        var listEdades = [18, 17, 21, 22];
+        // estamos utilizando un callback esMayorEdad
+        var todosMayores = listEdades.every(esMayorEdad); // resultado: true & false & true & true = false
+        
+        function esMayorEdad(edad) {
+            // aca se puede poner cualquier código
+            // pero debe devolver si o si un true o false: booleano
+            return edad >= 18; // 
+        }
+        console.log(todosMayores); //devuelve un booleano
+
+        // simulación o esbozo de la función Every
+        // solo un ejemplo
+        // function every(funcionExterna) {
+        //     var edad1 = listEdades[1];
+        //     funcionExterna(edad1);
+        //     var edad2 = listEdades[2];
+        //     funcionExterna(edad2);            
+        // }
+
+
+        var listaFiltrada = listEdades.filter(esMayorEdad);
+        console.log(listaFiltrada); //devuelve una array filtrado
+
+        console.log(listEdades.some(esMayorEdad)); // true || false || true || true = true
+
+        console.log(listEdades.map(Math.sqrt)); // devuelve un array al cual se le aplico una función
+
+        // marcar azul y rojo
+        function crearMarcador(color) {
+            return function() {
+                return `Escribir en la pizarra con color ${color}`;
+            }
+        }
+
+        var marcadorAzul = crearMarcador("azul");
+        var marcadorRojo = crearMarcador("rojo");
+        console.log(marcadorAzul());
+        console.log(marcadorRojo());
+
+
+    </script>
+</body>
+</html>

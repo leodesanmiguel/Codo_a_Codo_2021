@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Titulo -->
+    <title>Práctica 6 - JavaScript con HTML5 - JAVA Full Stack - Codo a Codo 4.0 </title>
+    <!-- Estilos -->
+    <link rel="stylesheet" href="./css/estilos.css">
+</head>
+
+<body>
+    <div class="conteiner">
+        <header>
+            <div class="logo"><img src="./img/header-codo.png" alt=""></div>
+        </header>
+        <!-- <div class="cleaar"></div> -->
+        <nav>
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Limpiar</a></li>
+            </ul>
+            <div class="menu">
+
+            </div>
+        </nav>
+
+        <section>
+            <h1>Practica 6: <span>Javascrip</span> </h1>
+            <p> Ingrese dos números y active el botón</p>
+            <p id="resultado">RESULTADO</p>
+        </section>
+
+        <sidebar>
+            <form id='form'>
+                <label for="primera">Primera: </label>
+                <input type="text" name="numero1" id="primera" placeholder="40" pattern="[0-9]{1,2}" title="El numero debe ser entre 0 y 99">
+
+                <label for="segunda">Segunda: </label>
+                <input type="text" name="numero2" id="segunda" placeholder="16" pattern="[0-9]{1,2}" id="validaNro2">
+
+                <button onclick='sumar()'>Sumar</button>
+            </form>
+
+
+        </sidebar>
+        <!-- <div class="cleaar"></div> -->
+        <footer>
+            <p> Design by <b> Leonardo Martinez </b> <small> dEVol</small> ©</p>
+        </footer>
+    </div>
+
+    <script src="./js/principal.js"></script>
+</body>
+
+</html>

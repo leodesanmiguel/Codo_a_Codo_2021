@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        // operadores lógicos
+        var hoyLlueve = true;
+        var estaNublado = true;
+        var caePiedra = true;
+        var estaSoleado = false;
+        
+
+        // operador AND, &&
+        if (hoyLlueve && caePiedra) {
+            console.log("No salgo con el auto a trabajar");
+        }
+
+        var usuario = true;
+        var pass = true;
+        if (usuario && pass) {
+            console.log("Ingresar a la página");
+        }
+
+        // operador OR, ||
+        var hayPronosticoLluvia = true;
+        var estaNublado = false;
+        if (hayPronosticoLluvia || estaNublado ) {
+            console.log("Llevo el parágüa");
+        }
+
+        pass = false;
+        if (usuario || pass) {
+            console.log("El mail está ok, desea recuperar su contraseña?");
+        }
+
+        if (!hoyLlueve) {
+            console.log("No llevo el parágüas");
+        }
+
+        
+        // condicional if
+        const mayorEdad = 18;
+        var edad = prompt("Ingrese su edad");
+        console.log(edad);
+
+        if (edad >= mayorEdad) {
+            console.log("Puede ingresar a la página");
+        } else {
+            console.log("No puede ingresar a la página por ser menor de edad");
+        }
+
+        // condicional switch
+        var nroMes = prompt("Ingrese el número de mes");
+
+        switch (nroMes) {
+            case "1":
+                console.log("Enero");
+                break;
+                
+            case "2":
+                console.log("Febrero");
+                break;
+
+            case "3":
+                console.log("Marzo");
+                break;    
+
+            default:
+                console.log("No existe ese mes");
+                break;
+        }
+        
+
+        // var, ler, const
+        // let y = 30; // no es la misma variable que la siguiente y
+        if (edad >= mayorEdad) {
+            var x = 10;
+            let y = 20; // no es la misma variable que la anterior y
+        }
+        console.log(x);
+        // console.log(y); //errr
+
+        const pi = 3.14;
+        // pi = 3.12;
+
+        // bucle for
+        for (let i = 0; i < 3; i++) {
+           console.log(i); 
+
+           
+        //    if (confirm("Desea salir")) {
+        //        break;
+        //    }
+        }
+        // console.log(i); //err
+
+
+        // bucle while
+        var i = 0;
+        while (i<3) {
+            console.log(i);
+            i++;
+        }
+
+
+
+    </script>
+    
+</body>
+</html>

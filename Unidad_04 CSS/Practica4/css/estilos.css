@@ -1,0 +1,84 @@
+/* Estilos Generales */
+
+body {
+    background-color: rgb(208, 128, 255, 0.15);
+}
+
+.cuadro {
+    display: inline-block;
+    width: 100pt;
+    height: 100pt;
+    background-color: rgba(241, 15, 15, 0.75);
+    color: #ff0;
+    padding: 20pt;
+    border: 20pt;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 18pt;
+}
+
+.cuadro:hover {
+    color: rgb(41, 6, 243);
+    cursor: move;
+}
+
+.recuadro {
+    /* fondo de las cajas */
+    background-color: transparent;
+    background-image: url(../img/fondo_carrera.jfif);
+    background-size: cover;
+    position: fixed;
+    display: inline-block;
+    width: 500pt;
+    /* 508 = 3 x (100 + 10 + 10 + 5)
+           + 1 x (100 + 10 + 10 + 5) + 8 */
+    height: 130pt;
+    /* 130 = 100 + (2 x 10) + (2 x 5)   */
+}
+
+.recuadro ul {
+    /* elimina las viñetas  y le da espacio respecto al cuadro*/
+    list-style: none;
+    padding: 10pt;
+    margin: 0;
+}
+
+.recuadro ul li {
+    /* color de fondo */
+    background-color: rgb(200, 10, 10, 0.75);
+    /* color de los textos */
+    color: #ffff00;
+    /* Posicion respecto al div cuadro */
+    position: relative;
+    /* Este uno al lado del otro */
+    float: left;
+    /* color del borde de cada caja */
+    border: 5pt rgba(255, 255, 255, 0.753) solid;
+    /* separación de cada caja */
+    margin-right: 10pt;
+    /* tamaño de las cajas */
+    width: 100pt;
+    height: 100pt;
+    /* tipo y tamaño de fuente */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 18pt;
+}
+
+.recuadro ul li:hover {
+    color: rgb(98, 0, 255);
+    font-weight: bold;
+    cursor: move;
+}
+
+#dos {
+    background-color: #000000;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='105' viewBox='0 0 80 105'%3E%3Cg fill-rule='evenodd'%3E%3Cg id='death-star' fill='%239C92AC' fill-opacity='0.4'%3E%3Cpath d='M20 10a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V10zm15 35a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V45zM20 75a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V75zm30-65a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V10zm0 65a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V75zM35 10a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V10zM5 45a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V45zm0-35a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V10zm60 35a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V45zm0-35a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V10z' /%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    border-radius: 18pt;
+    color: #fff;
+}
+
+#dos:hover {
+    color: green;
+    font-size: 18pt;
+    font-weight: bold;
+    cursor: move;
+}

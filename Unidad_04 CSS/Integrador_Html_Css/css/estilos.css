@@ -1,0 +1,416 @@
+    /******************************************************/
+    
+    @import url ('https://fonts.googleapis.com/css2? family = Lato: wght @ 100; 300; 700 & family = Open + Sans & family = Raleway & display = swap');
+    @import url ('https://fonts.googleapis.com/css2? family = Playfair + Display: wght @ 200,400; 700 & display = swap');
+    @import url ('https://fonts.googleapis.com/css2? family = Roboto: wght @ 100, 300; 400 & display = swap');
+     :root {
+        /* colores*/
+        --color_header: #fefefe;
+        --color_header_t: #f0f0f0dd;
+        --color_empresa: #303030;
+        --color_empresa_t: #303030dd;
+        --color_btn_claro: rgb(245, 133, 4);
+        --color_btn_oscuro: #77B300;
+        /* fuentes */
+        --fuente_h1: 'Playfair Display', serif;
+        --fuente_h0: Georgia, 'Times New Roman', Times, serif;
+        --fuente_h3: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        --fuente_h2: 'Roboto', sans-serif;
+        --fuente_empresa_lato: 'Lato', sans-serif;
+        --fuente_empresa_Open: 'Open Sans', sans-serif;
+        --fuente_empresa_Relaway: 'Raleway', sans-serif;
+    }
+    
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    
+    body {
+        background-color: rgba(159, 187, 185, 0.15);
+    }
+    
+    .contenedor {
+        position: relative;
+        width: 80%;
+        align-items: center;
+        max-width: 1200px;
+        margin: 20px auto;
+    }
+    
+    header {
+        background-image: url("../img/header.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        position: relative;
+        display: inline-block;
+        width: 100%;
+        max-width: 1200px;
+        height: 450px;
+    }
+    
+    .nav_titulo {
+        width: 60%;
+        height: 60%;
+        display: inline-block;
+        position: relative;
+        left: 0px;
+    }
+    
+    .nav_titulo h1 {
+        color: var(--color_header);
+        font-family: var(--fuente_h0);
+        font-weight: bold;
+        padding: 30px;
+    }
+    
+    .h_titulo>span {
+        font-weight: lighter;
+        padding-left: 2px;
+        color: var(--color_header_t);
+    }
+    
+    .nav_menu {
+        position: absolute;
+        display: inline-block;
+        width: 40%;
+        padding-top: 30px;
+    }
+    
+    .nav_menu li {
+        display: inline-block;
+    }
+    
+    .nav_menu a {
+        color: var(--color_header_t);
+        font-family: var(--fuente_h3);
+        font-size: smaller;
+        display: inline-block;
+        padding: 10px 10px;
+        text-decoration: none;
+    }
+    
+    .nav_menu a:hover {
+        background-color: var(--color_header_t);
+        color: inherit;
+    }
+    
+    .nv_opciones {
+        position: absolute;
+        display: block;
+        bottom: 30px;
+    }
+    
+    .nv_opciones ul {
+        list-style: none;
+    }
+    
+    .nv_opciones li {
+        padding-left: 30px;
+        padding-bottom: 10px;
+        padding-right: 30px;
+    }
+    
+    .nv_opciones a {
+        color: var(--color_header);
+        text-decoration: none;
+        font-family: var(--fuente_h2);
+        font-weight: 100;
+        display: block;
+        padding-bottom: 10px;
+    }
+    
+    .nv_opciones a:hover {
+        background-color: var(--color_header_t);
+        color: inherit;
+    }
+    /**  EMPRESA  **/
+    
+    .empresa {
+        position: relative;
+        display: block;
+        background-color: var(--color_header);
+    }
+    
+    .empresa .row {
+        text-align: center;
+        justify-content: center;
+        width: 100%;
+    }
+    
+    .empresa h2 {
+        font-family: var(--fuente_empresa_lato);
+        font-weight: 100;
+        color: var(--color_empresa_t);
+        padding: 20px;
+        margin-bottom: 0;
+    }
+    
+    .empresa .col {
+        display: inline-block;
+        margin-top: 0;
+        width: 30%;
+        margin: 0 calc(20px / 3);
+    }
+    
+    .empresa .col img {
+        width: 80px;
+        height: 80px;
+        padding: 10px 0px;
+    }
+    
+    .empresa .col h3 {
+        font-family: var(--fuente_empresa_Open);
+        font-weight: 700;
+        color: var(--color_empresa);
+        padding: 15px;
+    }
+    
+    .empresa .col p {
+        font-family: var(--fuente_empresa_Relaway);
+        color: var(--color_empresa);
+        font-size: 10px;
+        padding: 2px 10px;
+        margin-bottom: 20px;
+        /* letter-spacing: 2pt;
+     para separar entgre letras */
+        /* word-spacing: 5pt;
+     para separacion entre palabras */
+        line-height: 1.2rem;
+        /* para la separacion entre lineas */
+        /* text-indent: 30pt;
+    para sangrias */
+    }
+    /**  OFERTA  **/
+    
+    .oferta {
+        position: relative;
+        display: block;
+        background-color: var(--color_header);
+    }
+    
+    .oferta .row {
+        text-align: center;
+        justify-content: center;
+        width: 100%;
+    }
+    
+    .oferta h2 {
+        font-family: var(--fuente_empresa_lato);
+        font-weight: 100;
+        color: var(--color_empresa_t);
+        padding: 20px;
+        margin-bottom: 0;
+    }
+    
+    .oferta .col {
+        background-color: var(--color_header_t);
+        display: inline-block;
+        margin-top: 0;
+        width: 30%;
+        margin: 0 calc(20px / 3);
+    }
+    
+    .oferta .col img {
+        width: 100%;
+        padding: 0px;
+    }
+    
+    .oferta ul {
+        list-style: none;
+    }
+    
+    .oferta li {
+        display: inline-block;
+    }
+    
+    .oferta .col li>img {
+        padding: 5px;
+        width: auto;
+    }
+    
+    .oferta .col h3 {
+        font-family: var(--fuente_empresa_Open);
+        font-weight: 300;
+        color: var(--color_empresa);
+        padding: 10px;
+    }
+    
+    .oferta .col p.of_detalle {
+        font-family: var(--fuente_empresa_Relaway);
+        color: var(--color_empresa);
+        font-size: 10px;
+        font-weight: 700;
+        text-align: left;
+        padding: 0px 10px;
+        margin-bottom: 10px;
+        /* letter-spacing: 2pt;
+     para separar entgre letras */
+        /* word-spacing: 5pt;
+     para separacion entre palabras */
+        line-height: 1.2rem;
+        /* para la separacion entre lineas */
+        /* text-indent: 30pt;
+    para sangrias */
+    }
+    
+    .oferta .col p.precio {
+        font-family: var(--fuente_empresa_Relaway);
+        color: var(--color_btn_oscuro);
+        font-size: 14px;
+        text-align: left;
+        padding: 0px 10px;
+        /* margin-bottom: 20px; */
+        /* letter-spacing: 2pt;
+     para separar entgre letras */
+        /* word-spacing: 5pt;
+     para separacion entre palabras */
+        /* line-height: 1.2rem; */
+        /* para la separacion entre lineas */
+        /* text-indent: 30pt;
+    para sangrias */
+    }
+    
+    .oferta .boton {
+        display: block;
+        font-family: var(--fuente_empresa_Relaway);
+        font-weight: 700;
+        font-size: 14px;
+        text-decoration: none;
+        padding: 5px;
+        margin: 4%;
+        border-radius: 2px;
+        width: 96% auto;
+        background-color: var(--color_btn_claro);
+        color: var(--color_header_t);
+    }
+    
+    .oferta .ver {
+        font-family: var(--fuente_empresa_Relaway);
+        font-weight: 700;
+        font-size: 14px;
+        margin: 10px 30px auto;
+        text-align: right;
+        padding: 25px;
+    }
+    
+    .oferta a:hover {
+        color: var(--color_empresa_t);
+    }
+    
+    .oferta .verb {
+        padding: 15px;
+        text-decoration: none;
+        border-radius: 4px;
+        background-color: var(--color_btn_oscuro);
+        color: var(--color_header_t);
+    }
+    /**  FOOTER  **/
+    
+    .footer {
+        position: relative;
+        display: block;
+        width: 80%;
+        margin: 0px auto;
+    }
+    
+    .footer img {
+        width: 100%;
+    }
+    
+    .footer h1 {
+        position: absolute;
+        top: 10%;
+        left: 10%;
+        font-family: var(--fuente_empresa_Open);
+        color: var(--color_header);
+        font-weight: 300;
+    }
+    
+    .footer p {
+        position: absolute;
+        left: 10%;
+        top: 50%;
+        font-family: var(--fuente_empresa_Relaway);
+        color: var(--color_header);
+        font-size: small;
+    }
+    
+    .footer a {
+        position: absolute;
+        left: 10%;
+        font-family: var(--fuente_empresa_lato);
+        top: 80%;
+        padding: 10px 20px;
+        background-color: var(--color_btn_claro);
+        text-decoration: none;
+        color: var(--color_header_t);
+    }
+    
+    .footer a:hover {
+        color: var(--color_empresa_t);
+    }
+    
+    .pie_menu {
+        position: relative;
+        background-color: grey;
+        width: 80%;
+        top: -5px;
+        height: 60px;
+        margin: auto;
+        font-family: var(--fuente_empresa_Relaway);
+        font-size: small;
+    }
+    
+    .pie_menu ul {
+        position: absolute;
+        display: inline-block;
+        top: 35%;
+        list-style: none;
+        margin: 0% 5%;
+        font-family: var(--fuente_empresa_Relaway);
+        font-size: small;
+    }
+    
+    .pie_menu li {
+        display: inline;
+        padding: 10px;
+        color: var(--color_header_t);
+    }
+    
+    .pie_menu li:hover {
+        background-color: var(--color_header_t);
+        color: inherit;
+    }
+    
+    .pie_menu .copy {
+        position: absolute;
+        padding: 20px;
+        display: block;
+        right: 0px;
+        color: var(--color_header_t);
+    }
+    /*******************************************************
+     **      AHORA ME FALTA  COMPLATAR CON OTROS ESTILOS  **
+     **           estilos para resolución pequeña         **/
+    
+    @media (max-width: 600px) {}
+    /* estilos para resolución mediana */
+    
+    @media (min-width: 600px) {}
+    /* Estilos para resolución Grande*/
+    
+    @media (min-width: 992px) {}
+    /* Estilos para resolución Extra Grande*/
+    
+    @media (min-width: 1200px) {
+        header {
+            max-width: 1900px;
+            align-items: center;
+        }
+        .nav_titulo h1 {
+            color: red;
+        }
+    }

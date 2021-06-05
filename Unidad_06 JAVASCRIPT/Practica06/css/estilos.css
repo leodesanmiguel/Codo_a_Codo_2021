@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    background: #afafaf33;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.2rem;
+    min-height: 100%;
+}
+
+.conteiner>* {
+    /* background: #f0000020; */
+    padding: 3px;
+    border-radius: 2px;
+    text-align: center;
+}
+
+.cleaar {
+    clear: both;
+}
+
+header {
+    border: 1px yellow solid;
+    grid-area: header;
+}
+
+header>* {
+    text-align: center;
+}
+
+nav {
+    border: 1px blue solid;
+    grid-area: nav;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    float: right;
+}
+
+li>a {
+    text-decoration: none;
+    /* padding: 20%; */
+    display: block;
+    padding: 30px 30px;
+}
+
+li>a:hover {
+    background-color: #FF004466;
+}
+
+section {
+    border: 1px red solid;
+    grid-area: section;
+}
+
+sidebar {
+    background: url(../img/js_.png) no-repeat center/cover;
+    border: 1px green solid;
+    grid-area: sidebar;
+}
+
+form {
+    align-items: center;
+    text-align: center;
+}
+
+label,
+input {
+    display: block;
+}
+
+input:valid {
+    background-color: #00ffAA55;
+    color: #105326;
+    font-size: x-large;
+}
+
+input:invalid {
+    background-color: #ff004055;
+    color: #FF0044;
+    font-size: x-large;
+    font-weight: bold;
+}
+
+footer {
+    border: 1px gray solid;
+    grid-area: footer;
+}
+
+footer>p {
+    text-align: right;
+    font-size: smaller;
+}
+
+.conteiner {
+    display: grid;
+    gap: 2px;
+    grid-template-columns: auto;
+    grid-template-rows: 13vh 13vh 30vh 30vh 7vh;
+    grid-template-areas: "header" "nav" "section" "sidebar" "footer";
+}
+
+@supports(object-fit: cover) {
+    .logo img {
+        width: 100%;
+        height: calc(100% - 60px);
+        /*<-- Yo puse 60px porque más o menos es lo que mide la altura del título, pero tú coloca un número de pixeles que se ajuste*/
+        object-fit: contain;
+    }
+}
+
+@media (min-width:600px) {
+    .conteiner {
+        background: #6bf7e420;
+        padding: 8px;
+        border-radius: 4px;
+        grid-template-columns: 150px auto;
+        grid-template-rows: 13vh 40vh 40vh 7vh;
+        grid-template-areas: "header nav  nav" "section section section" "sidebar sidebar sidebar" "footer  footer footer";
+    }
+}
+
+@media (min-width:900px) {
+    .conteiner {
+        background: #a16bf720;
+        padding: 20px;
+        border-radius: 10px;
+        grid-template-columns: 150px auto auto auto;
+        grid-template-rows: 13vh 70vh 7vh;
+        grid-template-areas: "header  nav nav nav " "section section sidebar sidebar" "footer footer footer footer";
+    }
+}

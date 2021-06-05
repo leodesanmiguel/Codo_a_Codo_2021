@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practica 7 - JAVA-FRONT END 2021 - Codo a Codo </title>
+    <link rel="stylesheet" href="./css/practica07.css">
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="titulo1">
+            <img src="./img/header-codo.png" alt="">
+            <h1>
+                Promedio de Notas </h1>
+            <p class="actividad"><u>Practica 2:</u> Realizar un programa que permita ingresar al usuario nombre del alumno, 3 notas y muestre el promedio
+            </p>
+
+        </div>
+        <div class="card">
+
+            <h2>
+                Indentificación del alumno
+            </h2>
+            <form name="identificarAlumno" action="" method="get">
+                <label for="alumno">Ingrese el nombre del alumno</label>
+                <input type="text" name="alumno" id="nombreAlumno" placeholder="nombre">
+                <div class="btn">
+                    <input type="button" onclick="AplicarNombre()" value="Aceptar" id="idAceptar">
+                    <input type="button" value="Cancelar" id="idCancelar">
+                </div>
+            </form>
+
+
+        </div>
+        <div class="card">
+            <h2>Carga de Materias </h2>
+            <form name="cargarNotas" action="" method="get">
+                <label for="materia">Seleccione la materia</label>
+                <select id="opcionesMateria" disabled="disabled" name="select">
+                  </select>
+                <div class="notas" disabled="disabled">
+                    <label for="nota1">Nota 1</label>
+                    <input type="text" name="nota1" id="nota1" placeholder="entero">
+                    <label for="nota2">Nota 2</label>
+                    <input type="text" name="nota2" id="nota2" placeholder="entero">
+                    <label for="nota3">Nota 3</label>
+                    <input type="text" name="nota3" id="nota3" placeholder="entero">
+                </div>
+                <button id="btnPromedio" onclick="calcularPromedio()">Calcular Promedio</button>
+            </form>
+        </div>
+
+
+        <script src="./js/codigo07.js"></script>
+</body>
+
+</html>

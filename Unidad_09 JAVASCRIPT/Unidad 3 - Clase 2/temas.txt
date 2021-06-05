@@ -1,0 +1,13 @@
+Funciones: 
+Callbacks: se envía una función como parámetro
+Closures: clausulas que asocian datos con funciones
+Scope: contexto en que las variables son visibles
+Arrow Functions: menos código, más limitada
+
+Arrays: variable puede contener más de un valor a la vez.
+for Each: llama a una función por cada elemento de un array
+every: determina si todos los elementos satisfacen una condición
+filter: filtra los elementos que cumplen con una condición
+some: si alguno cumple con la condición
+map: 
+reduce

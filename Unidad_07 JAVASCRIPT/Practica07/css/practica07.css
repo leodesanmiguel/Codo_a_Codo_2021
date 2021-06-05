@@ -1,0 +1,103 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #e8e7c0;
+    background: -webkit-linear-gradient(to right, #e8e7c0, #3b8f81);
+    background: linear-gradient(to right, #e8e7c0, #63a499);
+    min-height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    width: 80vw;
+    margin: auto;
+    text-align: center;
+    border: 1px solid blue;
+}
+
+.titulo1 {
+    width: 70%;
+    margin: auto;
+    color: white;
+    min-height: 2em;
+    border: 1px solid blue;
+}
+
+.actividad {
+    font-weight: 200;
+}
+
+.card {
+    border: 1px solid white;
+    text-align: left;
+    border-radius: 5px;
+    background-color: #e8e7c0AA;
+    padding: 2em 1em;
+    width: 80%;
+    margin: 10px auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.card h2 {
+    margin-bottom: 0.7em;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+#nombreAlumno {
+    font-size: 1.5em;
+}
+
+#nombreAlumno:hover {
+    color: blue;
+}
+
+.btn {
+    font-size: 2.1em;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+}
+
+.btn>input {
+    font-size: 0.6em;
+    margin: 10px;
+    padding: 10px;
+    width: 120px;
+}
+
+.notas {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.notas>label,
+.notas>input {
+    width: calc(100%/6);
+    font-size: small;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+#btnPromedio {
+    padding: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-stretch: extra-expanded;
+    font-weight: 700;
+}
+
+#btnPromedio:hover {
+    background-color: #3b8f81;
+    color: #e8e7c0;
+}

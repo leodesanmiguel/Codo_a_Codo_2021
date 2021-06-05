@@ -1,0 +1,19 @@
+.caja {
+  width: 100px;
+  height: 100px;
+  background: red;
+  color: white;
+}
+#uno {
+  position: fixed;
+  top: 80px;
+  left: 10px;
+  background: blue;
+    width: 500px;
+}
+.vista {
+  width: 500px;
+  height: 300px;
+  padding-left: 150px;
+    background: red;
+}

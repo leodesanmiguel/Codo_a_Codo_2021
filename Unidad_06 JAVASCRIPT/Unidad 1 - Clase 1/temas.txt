@@ -1,0 +1,22 @@
+Teoría javascript:
+- para que sirve? interactividad dinámica en los sitios web, ejemplo fortaleza password, 
+- de uso amplio: front-end, back-end: navegador, celulares, app escritorio
+- lenguaje del lado del cliente: ejemplo packet tracer, http https: sirve para ejecutar instrucciones del lado del cliente
+- ECMAScript estandar para la implementación de javascript en cada navegador
+- consola de navegador: permite ejecutando comandos de JavaScript.
+  - partes del inspector
+
+- Mensajes en consola:
+  - Ejemplo consola
+  - tipos de mensajes en consola: console.log, etc.
+
+- Mayusculas y minusculas: camelcase
+- separación con ;
+- variable y reglas de nombrado: numero letra _ $
+- levemente tipado: declaración var, let, const
+- tipos de variables: numéricas, texto, booleanos
+- parseInt(), parseFloat(): extraer número de un string
+- number: conversor a número
+- objeto Math: 
+
+https://norfipc.com/web/javascript-facil-paginas-web-ejemplos.html#exp

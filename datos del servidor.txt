@@ -1,0 +1,53 @@
+
+JAVA
+Instalar filezilla Cliente: https://filezilla-project.org/download.php?type=client
+http://cursophp.foxit.com.ar/comision2108/
+
+Host: ftp.foxit.com.ar
+Usu: cursojavac2108@cursophp.foxit.com.ar
+Password: FFM0_rbUmmb4
+port: 21
+
+/*******************************************************/
+Actividad 1 - Receta de Cocina
+
+http://cursophp.foxit.com.ar/comision2108/Leonardo%20Miguel%20Martinez/Actividad1/Practica_1.html
+
+http://cursophp.foxit.com.ar/comision2108/Leonardo%20Miguel%20Martinez/Actividad1/Practica_1.v2.html
+
+/*******************************************************/
+Actividad 2 Formulario Simple ACCESO
+
+http://cursophp.foxit.com.ar/comision2108/Leonardo%20Miguel%20Martinez/Practica2/
+
+Actividad 2 Formulario Login1
+http://cursophp.foxit.com.ar/comision2108/Leonardo%20Miguel%20Martinez/Practica2/login1.html
+
+Actividad 2 Formulario Login2 con marco
+http://cursophp.foxit.com.ar/comision2108/Leonardo%20Miguel%20Martinez/Practica2/login2.htm
+
+/*******************************************************/
+Actividad 3 - CSS - Unidad 1
+
+http://cursophp.foxit.com.ar/comision2108/Leonardo%20Miguel%20Martinez/Practica3/index.html
+
+/*******************************************************/
+Actividad 4 - CSS - Unidad 2
+
+caja-div
+http://cursophp.foxit.com.ar/comision2108/Leonardo%20Miguel%20Martinez/Practica4/caja_div.html
+
+caja-lista
+http://cursophp.foxit.com.ar/comision2108/Leonardo%20Miguel%20Martinez/Practica4/caja_lista.html
+
+/*******************************************************/
+
+INTEGRADOR HTML5+CSS3
+
+http://cursophp.foxit.com.ar/comision2108/Leonardo%20Miguel%20Martinez/Integrador_Html_Css/
+
+/*******************************************************/
+
+ACTIVIDAD 5 - BOOTSTRAP 
+
+http://cursophp.foxit.com.ar/comision2108/Leonardo%20Miguel%20Martinez/Practica5/

@@ -1,0 +1,21 @@
+.caja {
+    display: inline-block;
+    position: relative;
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    color: blue;
+}
+
+#dos {
+    /*position: relative;*/
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background: black;
+}
+
+.caja:hover {
+    color: blue;
+    cursor: move;
+}

@@ -1,0 +1,112 @@
+span {
+    background-color: ##FF0000
+}
+
+p {
+    color: rgba(37, 37, 216, 0.397);
+}
+
+h1 {
+    background-color: #ABE5BE;
+}
+
+.red {
+    color: red;
+}
+
+.azul {
+    color: blue;
+}
+
+.yellow-bg {
+    background: yellow;
+}
+
+.qqqqq {
+    font-weight: bold;
+    text-shadow: 10px 50px 3px #FF0000;
+}
+
+#verde {
+    color: rgb(113, 0, 128);
+}
+
+#confondo {
+    background-color: rgb(135, 145, 235);
+}
+
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+/* selecciona todas la etiquetas que tengan un atributo lang que comience con "en" */
+
+*[lang^="en"] {
+    color: green;
+}
+
+*[onclick^="https"] {
+    color: green;
+}
+
+
+/* es lo mismo que poner .warning */
+
+*.warning {
+    color: red;
+}
+
+
+/* es lo mismo que poner #maincontent */
+
+*#maincontent {
+    border: 53px solid blue;
+}
+
+a {
+    color: black;
+}
+
+
+/* Links internos que comienzan con "#" */
+
+a[href^="#"] {
+    background-color: gold;
+}
+
+
+/* Links que contengan la palabra "ejemplo" en la URL */
+
+a[href*="ejemplo"] {
+    background-color: silver;
+}
+
+
+/* link con la palabra "sinmayusculas"en la URL, sin chequear mayúsculas */
+
+a[href*="sinmayusculas" i] {
+    color: blue;
+}
+
+
+/* link con la palabra "ConMAyusculas"en la URL,
+   con chequeo de mayúsculas  */
+
+a[href*="ConMAyusculas"] {
+    color: orange;
+}
+
+
+/* Links que comienzan con "https" y terminan en ".org" */
+
+a[href^="https"][href$=".org"] {
+    color: green;
+}
+
+
+/* Links que terminen en ".org" */
+
+a[href$=".org"] {
+    color: red;
+}

@@ -1,0 +1,26 @@
+body {
+    background: rgba(173, 216, 230, 0.486);
+}
+
+.caja {
+    display: inline-block;
+    width: 150px;
+    height: 150px;
+    background: red;
+    color: rgb(150, 144, 238);
+}
+
+#dos {
+    /*     position: fixed; */
+    top: 50px;
+    left: 60px;
+    background: rgba(0, 0, 0, 0.356);
+    border: 10px;
+    padding: 10px;
+    border-color: blue;
+}
+
+.caja:hover {
+    color: blue;
+    cursor: move;
+}

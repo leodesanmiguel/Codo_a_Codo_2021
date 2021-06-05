@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        // operadores lógicos
+        var hoyLlueve = true;
+        var caenPiedra = true;
+        var haySol = false;
+
+        console.log(hoyLlueve && caenPiedra);
+        if (hoyLlueve && caenPiedra) {
+            console.log("No salgo en auto a trabajar");
+        }
+
+        console.log(hoyLlueve && haySol); // true && true
+
+        console.log("Operador OR ||")
+        console.log(hoyLlueve || haySol); // 
+
+
+        var usuario = true;
+        var pass = true;
+        if (usuario && pass) {
+            console.log("Ok para ingresar a la página");
+        }
+
+        
+        var usuario = true;
+        var pass = false;
+        if (usuario || pass) {
+            console.log("Desea recuperar la contraseña?");
+        }
+
+
+        // condicional if
+        const mayorEdad = 18;
+        var edad = prompt("Ingrese su edad");
+
+        console.log(edad);
+        if(edad < mayorEdad) {
+            console.log("No puede ingresar por ser menor de edad");
+
+        } else {
+            console.log("Si puede ingresar a la página");
+        }
+
+        if(edad > mayorEdad) {
+            console.log("Puedo ingresar a la página");
+        }
+
+
+        // var, let, const
+        // mayorEdad = 21;
+        if (edad > mayorEdad) {
+            var x = 10;
+            let y = 20;
+        }
+
+        console.log(x);
+        // console.log(y);
+
+        const pi = 3.14;
+        console.log(pi * 3.4);
+
+        // condicional switch
+        var nroMes = prompt("Ingrese el número de mes para obtener su nombre");
+        switch (nroMes) {
+            case "1":
+                console.log("Enero")
+                break;
+                console.log("no salió del switch");
+            case "2":
+                console.log("Febrero");    
+                break;
+
+            default:
+                console.log("No existe el mes");
+                break;
+        } 
+
+        console.log("salió del switch");
+
+
+        // bucles
+        for (let i = 0;i < 3;i++) {
+           document.write(i);
+        }
+
+        // console.log(i);
+
+        var i = 0;
+        while (i<3) {
+            document.write("<br>");
+           document.write(i);
+           i++;
+        }
+
+        
+
+
+    </script>
+</body>
+</html>
